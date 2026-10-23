@@ -36,5 +36,4 @@ button{font:inherit;font-weight:750;color:white;background:linear-gradient(135de
 const button=document.getElementById('reveal'),note=document.getElementById('note');
 button.addEventListener('click',()=>{const open=note.classList.toggle('show');button.setAttribute('aria-expanded',String(open));button.textContent=open?'Keep this little note close 🤍':'Open your birthday note ✨';if(open){note.scrollIntoView({behavior:'smooth',block:'nearest'});const symbols=['♡','✦','✧','♥','🌸'],colors=['#d88499','#e5b46d','#c28ca2','#b95e79'];for(let i=0;i<22;i++){const el=document.createElement('span');el.className='confetti';el.textContent=symbols[Math.floor(Math.random()*symbols.length)];el.style.left=Math.random()*100+'vw';el.style.animationDelay=Math.random()*.7+'s';el.style.fontSize=(12+Math.random()*13)+'px';el.style.color=colors[Math.floor(Math.random()*colors.length)];document.body.appendChild(el);setTimeout(()=>el.remove(),3800)}}});
 </script></body></html>  
-button 
-buttonplaymusic/button 
+<button>playmusic</button>
